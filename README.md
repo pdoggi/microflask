@@ -28,6 +28,10 @@ To connect to postgres:
 docker exec -ti $(docker ps -aqf "name=users-db") psql -U postgres
 ```
 
+## Tips & Tricks
+
+When you add dependencies, you need to rebuild images since requirements are installed at build time, not run time.
+
 ## Troubleshooting Errors
 
 ```
